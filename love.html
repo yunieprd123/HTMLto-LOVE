@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1>Hai Ganteng!</h1>
+    <img src="https://i.pinimg.com/originals/fb/01/f8/fb01f80c2696f653791cbfc8e390a859.gif" />
+    <h1>Maukah kamu beliin aku pabrik pocky?</h1>
+    <button id="btn_mau" onclick="alert('I LOVE YOU GANTENGG MUACHHH')">Mau</button>&nbsp;
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+      Gamau
+    </button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
